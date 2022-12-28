@@ -1,21 +1,25 @@
 @font-face {
     font-family: 'Poppins';
     src: url(./fonts/Poppins-Bold.ttf) format('truetype');
+    font-weight: 700;
 }
 
 @font-face {
     font-family: 'Poppins';
     src: url(./fonts/Poppins-Medium.ttf) format('truetype');
+    font-weight: 500;
 }
 
 @font-face {
     font-family: 'Poppins';
     src: url(./fonts/Poppins-Regular.ttf) format('truetype');
+    font-weight: 400;
 }
 
 @font-face {
     font-family: 'Poppins';
     src: url(./fonts/Poppins-SemiBold.ttf) format('truetype');
+    font-weight: 600;
 }
 
 * {
@@ -23,6 +27,12 @@
     margin: 0;
     font-style: normal;
     padding: 0;
+}
+
+body {
+    width: 1260px;
+    margin: auto;
+
 }
 
 /* header*/
@@ -34,8 +44,7 @@ header {
     background: #FFFFFF;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    width: 1260px;
 }
 
 header .search {
@@ -69,6 +78,7 @@ header .search input::placeholder {
 
 header .nav-imgs {
     display: flex;
+    justify-content: center;
 }
 
 header .img-logo {
@@ -176,11 +186,13 @@ footer {
     justify-content: center;
     margin-top: 75px;
     margin-bottom: 134px;
+    grid-gap: 50px;
 
 }
+
 footer .column {
-margin-left: 30px;
-width: 200px;
+    margin-left: 30px;
+    width: 200px;
 }
 
 footer .column h3 {
